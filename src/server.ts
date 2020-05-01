@@ -2,7 +2,7 @@
 
 import express from 'express';
 import { SERVER_PORT } from 'environment';
-import  * as socket from '../sockets/socket';socketIO from 'socket.io';
+import  * as socketIO from 'socket.io';
 import http from 'http';
 
 //import * as socket from '../sockets/socket';
