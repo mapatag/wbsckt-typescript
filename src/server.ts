@@ -1,9 +1,9 @@
 
 
-import express from 'express';
+import * as express from 'express';
 import { SERVER_PORT } from 'environment';
 import  * as socketIO from 'socket.io';
-import http from 'http';
+import * as http from 'http';
 
 //import * as socket from '../sockets/socket';
 
