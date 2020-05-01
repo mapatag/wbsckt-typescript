@@ -36,6 +36,26 @@ export default class Server {
     public static get instance() {
         return this._intance || ( this._intance = new this() );
     }
+
+
+    /*private escucharSockets() {
+        console.log('Escuchando conexiones - sockets');
+        this.io.on('connection', cliente => {
+            console.log('Cliente conectado');
+            // Mensajes
+            //socket.mensaje( cliente, this.io );
+            // Desconectar
+            //socket.desconectar( cliente );         
+        });
+    } */
+
+
+    start( callback: Function ) {
+
+        this.httpServer.listen( this.port, callback );
+
+    }
+
 }
 
 
