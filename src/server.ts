@@ -45,10 +45,10 @@ export default class Server {
             console.log('Cliente conectado');
 
             // Mensajes
-            socket.mensaje( cliente, this.io );
+            //socket.mensaje( cliente, this.io );
 
             // Desconectar
-            socket.desconectar( cliente );         
+            //socket.desconectar( cliente );         
 
         });
 
