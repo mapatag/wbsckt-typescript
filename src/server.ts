@@ -1,15 +1,12 @@
 
 import router from './router';
 import * as bodyParser from 'body-parser';
-
 import * as express from 'express';
 import { SERVER_PORT } from './environment';
 import  * as socketIO from 'socket.io';
 import * as http from 'http';
 
 //import * as socket from '../sockets/socket';
-
-
 
 export default class Server {
 
@@ -20,7 +17,6 @@ export default class Server {
 
     public io: socketIO.Server;
     private httpServer: http.Server;
-
 
     private constructor() {
 
@@ -37,7 +33,6 @@ export default class Server {
         return this._intance || ( this._intance = new this() );
     }
 
-
     /*private escucharSockets() {
         console.log('Escuchando conexiones - sockets');
         this.io.on('connection', cliente => {
@@ -49,15 +44,10 @@ export default class Server {
         });
     } */
 
-
     start( callback: Function ) {
-
         this.httpServer.listen( this.port, callback );
-
     }
-
 }
-
 
 const server = Server.instance;
 
@@ -68,12 +58,8 @@ server.app.use( bodyParser.json() );
 // CORS
 //server.app.use( cors() );
 
-
 // Rutas de servicios
 server.app.use('/', router );
-
-
-
 
 server.start( () => {
     console.log(`Servidor corriendo en el puerto ${ server.port }`);
