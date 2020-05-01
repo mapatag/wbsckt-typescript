@@ -42,7 +42,7 @@ export default class Server {
             // Desconectar
             socket.desconectar( cliente );         
         });
-    } */
+    } 
 
     start( callback: Function ) {
         this.httpServer.listen( this.port, callback );
