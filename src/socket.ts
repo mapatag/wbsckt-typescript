@@ -1,5 +1,5 @@
 import { Socket } from 'socket.io';
-import socketIO from 'socket.io';
+import * as socketIO from 'socket.io';
 
 export const desconectar = ( cliente: Socket ) => {
 
