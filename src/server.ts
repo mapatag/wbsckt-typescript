@@ -28,7 +28,7 @@ export default class Server {
         this.httpServer = new http.Server( this.app );
         this.io = socketIO( this.httpServer );
 
-        this.escucharSockets();
+      //  this.escucharSockets();
     }
 
     public static get instance() {
@@ -36,7 +36,7 @@ export default class Server {
     }
 
 
-    private escucharSockets() {
+    /*private escucharSockets() {
 
         console.log('Escuchando conexiones - sockets');
 
@@ -52,7 +52,7 @@ export default class Server {
 
         });
 
-    }
+    } */
 
 
     start( callback: Function ) {
