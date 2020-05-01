@@ -1,7 +1,7 @@
 
 import Server from './server';
 import router from './router';
-import bodyParser from 'body-parser';
+import * as bodyParser from 'body-parser';
 import cors from 'cors';
 
 
