@@ -35,7 +35,7 @@ export default class Server {
 
     private escucharSockets() {
         console.log('Escuchando conexiones - sockets');
-        this.io.on('connection', cliente => { alert('ddd');
+        this.io.on('connection', cliente => { 
             console.log('Cliente conectado');
             // Mensajes
             socket.mensaje( cliente, this.io );
