@@ -54,7 +54,7 @@ router.post('/mensajes/:id', ( req: Request, res: Response  ) => {
 
 });
 
-// Servicio para obtener todos los IDs de los usuarios
+// Servicio para obtener todos los IDs de los usuarios   -> nuevo basico-v3 y v4
 router.get('/usuarios', (  req: Request, res: Response ) => {
 
     const server = Server.instance;
