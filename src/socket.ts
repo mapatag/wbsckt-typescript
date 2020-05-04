@@ -1,7 +1,7 @@
 import { Socket } from 'socket.io';
 import * as socketIO from 'socket.io';
-import { UsuariosLista } from '../usuarios-lista'; // -> nuevo para basico-v3
-import { Usuario } from '../usuario';              // -> nuevo para basico-v3 
+import { UsuariosLista } from './usuarios-lista'; // -> nuevo para basico-v3
+import { Usuario } from './usuario';              // -> nuevo para basico-v3 
 
 export const usuariosConectados = new UsuariosLista(); // -> nuevo para basico-v3
 
