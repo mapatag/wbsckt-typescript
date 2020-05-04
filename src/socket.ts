@@ -13,7 +13,7 @@ export const conectarCliente = ( cliente: Socket ) => { // -> nuevo para basico-
 export const desconectar = ( cliente: Socket ) => {
     cliente.on('disconnect', () => {
         console.log('Cliente desconectado');
-        usuariosConectados.borrarUsuario( cliente.id );
+        usuariosConectados.borrarUsuario( cliente.id ); // -> nuevo para basico-v3
     });
 }
 
