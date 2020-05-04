@@ -22,7 +22,7 @@ export const mensaje = ( cliente: Socket, io: socketIO.Server ) => {
 
 }
 
-// Configurar usuario
+// Configurar usuario -> nuevo para basico-v3
 export const configurarUsuario = ( cliente: Socket, io: socketIO.Server ) => {
 
     cliente.on('configurar-usuario', (  payload: { nombre: string }, callback: Function  ) => {
