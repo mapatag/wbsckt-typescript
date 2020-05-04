@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import Server from './server'; // nuevo para basico-v3
+import { usuariosConectados } from './socket';
 
 const router = Router();
 
@@ -77,6 +78,18 @@ router.get('/usuarios', (  req: Request, res: Response ) => {
 
     });
 
+});
+
+// Obtener usuarios y sus nombres  -> nuevo basico-v3 y v4
+router.get('/usuarios/detalle', (  req: Request, res: Response ) => {
+
+
+    res.json({
+        ok: true,
+        clientes: usuariosConectados.getLista()
+    });
+
+    
 });
 
 
