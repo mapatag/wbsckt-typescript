@@ -41,6 +41,8 @@ export default class Server {
             socket.conectarCliente( cliente);
             // Configurar usuario -> nuevo para basico-v3
             socket.configurarUsuario( cliente, this.io );
+            // Obtener usuarios activos -> nuevo para basico-v4
+            socket.obtenerUsuarios( cliente, this.io );
             // Mensajes
             socket.mensaje( cliente, this.io );
             // Desconectar
