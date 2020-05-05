@@ -38,7 +38,7 @@ export default class Server {
         this.io.on('connection', cliente => { 
             console.log('Cliente conectado');
             // Conectar cliente -> nuevo para basico-v3
-            socket.conectarCliente( cliente);
+            socket.conectarCliente( cliente, this.io);
             // Configurar usuario -> nuevo para basico-v3
             socket.configurarUsuario( cliente, this.io );
             // Obtener usuarios activos -> nuevo para basico-v4
