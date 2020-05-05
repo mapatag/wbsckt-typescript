@@ -5,7 +5,7 @@ import { Usuario } from './usuario';              // -> nuevo para basico-v3
 
 export const usuariosConectados = new UsuariosLista(); // -> nuevo para basico-v3
 
-export const conectarCliente = ( cliente: Socket ) => { // -> nuevo para basico-v3
+export const conectarCliente = ( cliente: Socket, io: socketIO.Server ) => { // -> nuevo para basico-v3
     const usuario = new Usuario( cliente.id );
     usuariosConectados.agregar( usuario );
 }
