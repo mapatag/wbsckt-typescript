@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import Server from './server'; // nuevo para basico-v3
 import { usuariosConectados } from './socket';
-import { GraficaData } from '../classes/grafica';
+import { GraficaData } from './grafica';
 
 const router = Router();
 
