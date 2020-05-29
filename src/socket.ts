@@ -29,9 +29,9 @@ export const mensaje = ( cliente: Socket, io: socketIO.Server ) => {
 // Configurar usuario -> nuevo para basico-v3
 export const configurarUsuario = ( cliente: Socket, io: socketIO.Server ) => {
 
-    cliente.on('configurar-usuario', (  payload: { nombre: string }, callback: Function  ) => {
+    cliente.on('configurar-usuario', (  payload: { nombre: string, sala: string }, callback: Function  ) => {
 
-        usuariosConectados.actualizarNombre( cliente.id, payload.nombre );
+        usuariosConectados.actualizarNombre( cliente.id, payload.nombre, payload.sala );
         io.emit('usuarios-activos', usuariosConectados.getLista()  ); // -> nuevo para basico-v4
         
         callback({
