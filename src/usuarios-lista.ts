@@ -16,12 +16,13 @@ export class UsuariosLista {
         return usuario
     }
 
-    public actualizarNombre( id: string, nombre: string ) {
+    public actualizarNombre( id: string, nombre: string, sala: string) {
 
         for( let usuario of this.lista ) {
 
             if ( usuario.id === id ) {
                 usuario.nombre = nombre;
+                usuario.sala = sala
                 break;
             }
 
