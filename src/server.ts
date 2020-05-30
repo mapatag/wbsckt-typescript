@@ -5,6 +5,7 @@ import * as express from 'express';
 import { SERVER_PORT } from './environment';
 import  * as socketIO from 'socket.io';
 import * as http from 'http';
+import * as cors from 'cors';
 
 import * as socket from './socket';
 
@@ -62,7 +63,7 @@ server.app.use( bodyParser.urlencoded({ extended: true }) );
 server.app.use( bodyParser.json() );
 
 // CORS
-//server.app.use( cors() );
+server.app.use( cors({ origin: true, credentials: true }) );
 
 // Rutas de servicios
 server.app.use('/', router );
