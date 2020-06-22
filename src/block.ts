@@ -13,16 +13,16 @@ export class Block {
 
     constructor( txn: string ) { 
         
-      this.txn          : txn;
-      this.issuer       : issuer;
-      this.owner        : owner; 
-      this.price        : price;
-      this.owner        : owner;
-      this.face_value   : face_value;
-      this.price        : price;
-      this.current_state: current_state;
-      this.previousHash : previousHash;
-      this.hash         : hash;
+      this.txn          : txn,
+      this.issuer       : issuer,
+      this.owner        : owner,
+      this.price        : price,
+      this.owner        : owner,
+      this.face_value   : face_value,
+      this.price        : price,
+      this.current_state: current_state,
+      this.previousHash : previousHash,
+      this.hash         : hash
       
     }
 
