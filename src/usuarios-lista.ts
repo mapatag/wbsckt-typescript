@@ -22,7 +22,7 @@ export class UsuariosLista {
             if ( usuario.id === id ) {
                 usuario.nombre = nombre;
                 // usuario.sala = "https://github-rtgame.herokuapp.com/pad_extended.html#"+usuario.id; 
-                usuario.sala = "asduashid";
+                usuario.sala = "asduas78ahid";
                 break;
             }
 
