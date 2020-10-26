@@ -19,10 +19,13 @@ export class UsuariosLista {
     public actualizarNombre( id: string, nombre: string, sala: string) {
 
         for( let usuario of this.lista ) {
-
+                var text = "";
+                var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"; 
+                for (var i = 0; i < 5; i++)
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
             if ( usuario.id === id ) {
                 usuario.nombre = nombre;
-                usuario.sala = sala
+                usuario.sala = text
                 break;
             }
 
