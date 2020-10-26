@@ -21,7 +21,7 @@ export class UsuariosLista {
         for( let usuario of this.lista ) {
             if ( usuario.id === id ) {
                 usuario.nombre = nombre;
-                /* usuario.sala = "https://github-rtgame.herokuapp.com/pad_extended.html#"+usuario.id; */
+                // usuario.sala = "https://github-rtgame.herokuapp.com/pad_extended.html#"+usuario.id; 
                 usuario.sala = sala;
                 break;
             }
