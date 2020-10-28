@@ -21,11 +21,7 @@ export class UsuariosLista {
         for( let usuario of this.lista ) {
             if ( usuario.id === id ) {
                 usuario.nombre = nombre;
-             var str1 = new String( "https://github-rtgame.herokuapp.com/pad_extended.html#"); 
-var str2 = new String( usuario.id); 
-var str3 = str1.concat(str2.toString());
-                usuario.sala = str3; 
-                /* usuario.sala = "asduas78ahid"; */
+                usuario.sala = sala;
                 break;
             }
 
